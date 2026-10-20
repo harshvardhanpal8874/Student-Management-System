@@ -59,6 +59,14 @@ student-management-complete/
 ├── .gitignore
 └── pom.xml
 ```
+## Author
+
+**Harsh Vardhan Pal**
+
+- GitHub: [@harshvardhanpal8874](https://github.com/harshvardhanpal8874)
+- Project: [Student Management System](https://github.com/harshvardhanpal8874/Student-Management-System)
+
+
 
 ## Database Configuration
 
