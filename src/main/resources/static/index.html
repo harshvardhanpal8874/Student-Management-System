@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Student Management System</h1>
+<p>Spring Boot + HTML + CSS + JavaScript</p>
+</header>
+
+<main>
+<section class="card">
+<h2>1. Login</h2>
+<div class="grid">
+<input id="username" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+</div>
+<button onclick="saveLogin()">Save Login</button>
+<button class="gray" onclick="logout()">Logout</button>
+<p id="loginStatus"></p>
+</section>
+
+<section class="card">
+<h2>2. Register User</h2>
+<div class="grid">
+<input id="registerUsername" placeholder="New username">
+<input id="registerPassword" type="password" placeholder="New password">
+</div>
+<button onclick="registerUser()">Register</button>
+</section>
+
+<section class="card">
+<h2>3. Add Department</h2>
+<input id="departmentName" placeholder="Department name, e.g. CSE">
+<button onclick="addDepartment()">Add Department</button>
+</section>
+
+<section class="card">
+<h2>4. Create Student</h2>
+<div class="grid">
+<input id="studentName" placeholder="Name">
+<input id="studentAge" type="number" placeholder="Age">
+<input id="studentEmail" placeholder="Email">
+<input id="studentRoll" type="number" placeholder="Roll number">
+<input id="studentSubject" placeholder="Subject">
+<input id="studentDepartmentId" type="number" placeholder="Department ID">
+</div>
+<button onclick="createStudent()">Create Student</button>
+</section>
+
+<section class="card">
+<h2>5. Student Operations</h2>
+<div class="grid">
+<input id="studentId" type="number" placeholder="Student ID">
+<input id="searchName" placeholder="Name to search">
+</div>
+<button onclick="getStudent()">Get Student</button>
+<button onclick="getAllStudents()">Get All</button>
+<button onclick="searchStudents()">Search</button>
+<button class="danger" onclick="deleteStudent()">Delete</button>
+</section>
+
+<section class="card">
+<h2>6. Update Student</h2>
+<div class="grid">
+<input id="updateId" type="number" placeholder="Student ID">
+<input id="updateName" placeholder="Name">
+<input id="updateAge" type="number" placeholder="Age">
+<input id="updateEmail" placeholder="Email">
+<input id="updateRoll" type="number" placeholder="Roll number">
+<input id="updateSubject" placeholder="Subject">
+<input id="updateDepartmentId" type="number" placeholder="Department ID">
+</div>
+<button onclick="updateStudent()">Update Student</button>
+</section>
+
+<section class="card">
+<h2>Response</h2>
+<pre id="output">No response yet.</pre>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
